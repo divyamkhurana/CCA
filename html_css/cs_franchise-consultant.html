@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Consultant | Famous Fingers</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="right_div">
+    	<header id="main_header">
+            <section id="user">
+                <h2 id="user_name" class="user_name icon franchise" title="Banglore franchise">Rahulnimo Palakia</h2>
+                <ul id="user_links">
+                    <li><a href="an-profile.html">Profile</a></li>
+                    <li><a href="login-logged_out.html">Logout</a></li>
+                </ul>
+            </section>
+            <nav id="main_nav" class="second_style">
+                <ul>
+                    <li><a href="cs_franchise-home.html">Home</a></li>
+                    <li><a href="cs_franchise-report.html">Report</a></li>
+                    <li><a href="cs_franchise-consultant.html" class="active">Consultant</a></li>
+                    <li><a href="cs-pins.html">PINs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="content">
+            <section id="report">
+                <header>
+                    <h2 class="network icon">Consultants <span class="subhead">19 consultants</span></h2>
+                    <form id="cs_refine_form" class="header_refine_form" action="an-consultant.html" method="get" name="cs_refine_form">
+                        <label for="status">Status:</label>
+                        <select id="status" name="status">
+                            <option value="all">All</option>
+                            <option value="unregistered">Unregistered</option>
+                            <option value="incomplete">Incomplete</option>
+                            <option value="complete">Complete</option>
+                            <option value="disabled">Disabled</option>
+                        </select>
+                        
+                        <label for="sort_by">Sort by:</label>
+                        <select id="sort_by" name="sort_by">
+                            <option value="name">Name</option>
+                            <option value="date">Date added</option>
+                            <option value="pins">PINs left</option>
+                        </select>
+                        
+                        <select id="order" name="order">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                        
+                        <label for="name">Name:</label>
+                        <input type="search" id="name" name="name">
+                        
+                        <input id="cs_refine_submit" type="submit" value="Go &rarr;" name="cs_refine_submit">
+                    </form>
+                </header>
+    
+                <ul id="cs_list" class="content_list">
+                    <li id="cs1" class="unregistered">
+                        <h3>Rahulina Singhania <span class="cs_id">XXX0123456</span><span class="cs_status">Unregistered</span></h3>
+                        <p class="cs_date_registered" title="Added by Akhtar Ahsan at 17:30, Sunday, 24th March, 2013"><span class="added_by">Akhtar Ahsan</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a></div>
+                    </li>
+                    <li id="cs2" class="incomplete">
+                        <h3>Rahulina Singhania <span class="cs_id">XXX0123456</span><span class="cs_status">Incomplete profile</span></h3>
+                        <p class="cs_date_registered" title="Added by Akhtar Ahsan at 17:30, Sunday, 24th March, 2013"><span class="added_by">Akhtar Ahsan</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a></div>
+                        <p class="current_status"><span class="icon pin">100 PINs left</span><span class="icon report">10000 reports completed</span><span class="icon pending_report">10 pending reports</span></p>
+                    </li>
+                    <li id="cs3" class="complete">
+                        <h3>Rahulina Singhania <span class="cs_id">XXX0123456</span><span class="cs_status">Complete profile</span></h3>
+                        <p class="cs_date_registered" title="Added by Sofilina Roy (XXX10234) at 17:30, Sunday, 24th March, 2013"><span class="added_by">Sofilina Roy (XXX10234)</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="cs_address">#1234, ABC street, Banglore - 112233</p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a><a href="tel:919876543210" class="icon phone">91 98765 43210</a></div>
+                        <p class="current_status"><span class="icon pin">100 PINs left</span><span class="icon report">10000 reports completed</span><span class="icon pending_report">10 pending reports</span></p>
+                    </li>
+                    <li id="cs4" class="complete">
+                        <h3>Rahulina Singhania <span class="cs_id">XXX0123456</span><span class="cs_status">Complete profile</span></h3>
+                        <p class="cs_date_registered" title="Added by you at 17:30, Sunday, 24th March, 2013"><span class="added_by">You</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="cs_address">#1234, ABC street, Banglore - 112233</p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a><a href="tel:919876543210" class="icon phone">91 98765 43210</a></div>
+                        <p class="current_status"><span class="icon pin">100 PINs left</span><span class="icon report">10000 reports completed</span><span class="icon pending_report">10 pending reports</span></p>
+                    </li>
+                    <li id="cs5" class="disabled">
+                        <h3>Rahulina Singhania <span class="cs_id">XXX0123456</span><span class="cs_status">Disabled</span></h3>
+                        <p class="cs_date_registered" title="Added by Akhtar Ahsan at 17:30, Sunday, 24th March, 2013"><span class="added_by">Akhtar Ahsan</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="cs_address">#1234, ABC street, Banglore - 112233</p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a><a href="tel:919876543210" class="icon phone">91 98765 43210</a></div>
+                        <p class="current_status"><span class="icon pin">100 PINs left</span><span class="icon report">10000 reports completed</span><span class="icon pending_report">10 pending reports</span></p>
+                    </li>
+                </ul><!-- END OF UL #CS_LIST -->
+            </section><!-- END OF SECTION #REPORT -->
+        </section><!-- END OF SECTION #CONTENT -->
+    
+    
+        <footer id="main_footer">
+        	<div id="footer_container">
+                <section id="contact_info">
+                    <h5>Famous Fingers</h5>
+                    <ul>
+                        <li>4th floor, SCO 371-373 Sector 34 A</li>
+                        <li>Chandigarh - 160034</li>
+                        <li><a class="email icon" href="mailto:contact@famousfingers.net">contact@famousfingers.net</a></li>
+                        <li><a class="phone icon" href="tel:+919815099959">+91 98150 99959</a></li>
+                        <li>Phone: 0172-5049751/52/53</li>
+                    </ul>
+                </section>
+                
+                <nav id="footer_nav">
+                    <h5>Some useful links</h5>
+                    <ul>
+                        <li><a href="#">Download client software</a></li>
+                        <li><a href="cs-payment_methods.html">Payment methods</a></li>
+                        <li><a href="cs-get_started.html">Get started</a></li>
+                    </ul>
+                </nav>
+                
+                <small id="copyright">Consultant Comunication Application. <span class="dont_break">&copy; 2013 <em>FamousFingers</em>.</span></small>
+            </div>
+        </footer>
+    </div><!-- END OF DIV #RIGHT_DIV -->
+
+
+
+    <div id="left_div">
+        <div id="logo_container">
+            <a href="an-home.html"><h1 id="logo" class="hide_text">Famous Fingers</h1></a>
+        </div>
+        
+        <aside id="content_sidebar">
+            <section id="add_cs">
+                <h2 class="add icon">Add consultant</h2>
+                <form id="add_cs_form" action="cs_franchise-consultant-cs_added.html" method="post" name="add_cs_form">
+                    <label for="cs_first_name" class="required">First name</label>
+                    <input id="cs_first_name" type="text" required name="cs_first_name">
+                    
+                    <label for="cs_last_name" class="required">Last name</label>
+                    <input id="cs_last_name" type="text" required name="cs_last_name">
+                    
+                    <label for="cs_email" class="required">Email</label>
+                    <input id="cs_email" type="email" required name="cs_email">
+
+                    <input type="submit" value="Add" name="generate">
+                </form>
+            </section><!-- END OF SECTION #ADD_CS -->
+        </aside><!-- END OF ASIDE #CONTENT_SIDEBAR -->
+    </div><!-- END OF DIV #LEFT_DIV -->
+</div><!-- END OF DIV #WRAPPER -->
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Report | Famous Fingers</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="right_div">
+    	<header id="main_header">
+            <section id="user">
+                <h2 id="user_name" class="user_name icon normal_cs" title="Under Banglore franchise">Rahulina Singhania</h2>
+                <ul id="user_links">
+                    <li><a href="cs-profile.html">Profile</a></li>
+                    <li><a href="login-logged_out.html">Logout</a></li>
+                </ul>
+            </section>
+            <nav id="main_nav" class="second_style">
+                <ul>
+                    <li><a href="cs-home-welcome.html">Home</a></li>
+                    <li><a href="cs-report-welcome.html" class="active">Report</a></li>
+                    <li><a href="cs-pins-welcome.html">PINs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="content">
+            <section id="report">
+                <header>
+                    <h2 class="report icon">Reports <span class="subhead">0 reports</h2>
+                    <form id="report_list_refine_form" class="header_refine_form" action="cs-report-welcome.html" method="get" name="report_list_refine_form">
+                        <label for="sort_by">Sort by:</label>
+                        <select id="sort_by" name="sort_by">
+                            <option value="date">Date</option>
+                            <option value="name">Name</option>
+                        </select>
+                        
+                        <select id="order" name="order">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                        
+                        <label for="name">Report of:</label>
+                        <input type="search" id="name" name="name">
+                        
+                        <input id="report_list_refine_submit" type="submit" value="Go &rarr;" name="report_list_refine_submit">
+                    </form>
+                </header>
+    
+                <p class="no_record">No reports to display</p>
+            </section><!-- END OF SECTION #REPORT -->
+        </section><!-- END OF SECTION #CONTENT -->
+    
+    
+        <footer id="main_footer">
+        	<div id="footer_container">
+                <section id="contact_info">
+                    <h5>Famous Fingers</h5>
+                    <ul>
+                        <li>4th floor, SCO 371-373 Sector 34 A</li>
+                        <li>Chandigarh - 160034</li>
+                        <li><a class="email icon" href="mailto:contact@famousfingers.net">contact@famousfingers.net</a></li>
+                        <li><a class="phone icon" href="tel:+919815099959">+91 98150 99959</a></li>
+                        <li>Phone: 0172-5049751/52/53</li>
+                    </ul>
+                </section>
+                
+                <nav id="footer_nav">
+                    <h5>Some useful links</h5>
+                    <ul>
+                        <li><a href="#">Download client software</a></li>
+                        <li><a href="cs-payment_methods.html">Payment methods</a></li>
+                        <li><a href="cs-get_started.html">Get started</a></li>
+                    </ul>
+                </nav>
+                
+                <small id="copyright">Consultant Comunication Application. <span class="dont_break">&copy; 2013 <em>FamousFingers</em>.</span></small>
+            </div>
+        </footer>
+    </div><!-- END OF DIV #RIGHT_DIV -->
+
+
+
+    <div id="left_div">
+        <div id="logo_container">
+            <a href="cs-home-welcome.html"><h1 id="logo" class="hide_text">Famous Fingers</h1></a>
+        </div>
+        
+        <aside id="content_sidebar">
+            <section id="refine_report" class="refine">
+                <h2 class="search icon">Refine reports</h2>
+                <form id="report_form" action="cs-report-welcome.html" method="get" name="report_form">
+                    <div>
+                        <h3>Report status</h3>
+                        <ul class="refine_list">
+                            <li><label><input type="checkbox" name="status" value="">Sent for analysis</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Analysing</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Analysed</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Completed</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Cancelled by you</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Cancelled by analyst</label></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Report type</h3>
+                        <ul class="refine_list">
+                            <li><label><input type="checkbox" name="type" value="">Child</label></li>
+                            <li><label><input type="checkbox" name="type" value="">Adult</label></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Date created</h3>
+                        <label for="created_start_date">From</label>
+                        <input id="created_start_date" type="date" value="" name="created_start_date">
+
+                        <label for="created_end_date">To</label>
+                        <input id="created_end_date" type="date" value="" name="created_end_date">
+                    </div>
+
+                    <input id="report_submit" type="submit" value="Show reports" name="report_submit">
+                </form><!-- END OF FORM #REPORT_FORM-->
+            </section><!-- END OF SECTION #REFINE_REPORT -->
+        </aside><!-- END OF ASIDE #CONTENT_SIDEBAR -->
+    </div><!-- END OF DIV #LEFT_DIV -->
+</div><!-- END OF DIV #WRAPPER -->
+
+
+<script src="js/CCA_FF.js"></script>
+
+</body>
+</html>

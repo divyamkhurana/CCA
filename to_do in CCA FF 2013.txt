@@ -1,0 +1,56 @@
+cs get_started
+cs payment_modes
+
+
+disabled consultant page
+error & info page
+pagination in notification/whiteboard
+complete excel sheets
+flow diagrams
+changed normal analyst report page
+changed analyst report page
+changed analyst homepage
+changed cs pins page
+changed analyst consultant page
+new edit location page
+style.css
+
+
+error / info msgs:
+validation errors
+info msg page
+password not long enough
+password must include a this & a that
+email exists with a consultant / analyst, when editing profile & adding consultant
+this id is already registered, use login form to enter
+cannot cancel the report, cs have downloaded the analysis report file
+cannot remove the analysis report file, cs have already downloaded it
+cannot cancel the report, an have downloaded the fingerprints
+can't download prints, report is cancelled by cs
+can't download prints, report is cancelled by an
+can't download analysis report file, report is cancelled by an
+you have just assigned cs 10 PINs, are you sure you want to assign him more pins
+cs have cancelled the pins request, still assign him 20 pins
+this cs is also a franchise of this location. sure disable the account
+location code already exists for Banglore location
+request is already pending. FF must respond before you can send any more requests.
+
+
+
+there are just two things to check on every action class:
+1. who is requesting the class. (logged in, super_admin, franchise, etc). 
+Errors would be like you are not authorized or redirecting to other pages.
+
+2. if its the right person, i.e. he has the right to access that class or page then,
+check the possible states (statuses) of the object in that class or page for all possible action.
+Errors would be like, this action can't be performed on this object as this has happend & stuff
+
+
+
+explain all the fields of the database in an excel sheet:
+what type of data, nullable or not & when, example values, all possible values (if would have a fixed set of values)
+
+changes in db:
+request_id is int
+set default values for fields
+an auto generated field in consultant & appending with location to form cs_id

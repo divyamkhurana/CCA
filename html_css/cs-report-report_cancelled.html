@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Report | Famous Fingers</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="right_div">
+    	<header id="main_header">
+            <section id="user">
+                <h2 id="user_name" class="user_name icon independent_cs" title="Independent consultant. Under no franchise.">Rahulina Singhania</h2>
+                <ul id="user_links">
+                    <li><a href="cs-profile.html">Profile</a></li>
+                    <li><a href="login-logged_out.html">Logout</a></li>
+                </ul>
+            </section>
+            <nav id="main_nav" class="second_style">
+                <ul>
+                    <li><a href="cs-home.html">Home</a></li>
+                    <li><a href="cs-report.html" class="active">Report</a></li>
+                    <li><a href="cs-pins.html">PINs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="content">
+        	<div class="msg_block"><p class="status_msg">Deepika's report has been <em>cancelled.</em></p></div>
+
+            <section id="report">
+                <header>
+                    <h2 class="report icon">Reports <span class="subhead">11 reports</h2>
+                    <form id="report_list_refine_form" class="header_refine_form" action="cs-report.html" method="get" name="report_list_refine_form">
+                        <label for="sort_by">Sort by:</label>
+                        <select id="sort_by" name="sort_by">
+                            <option value="date">Date</option>
+                            <option value="name">Name</option>
+                        </select>
+                        
+                        <select id="order" name="order">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                        
+                        <label for="name">Report of:</label>
+                        <input type="search" id="name" name="name">
+                        
+                        <input id="report_list_refine_submit" type="submit" value="Go &rarr;" name="report_list_refine_submit">
+                    </form>
+                </header>
+    
+                <ul id="report_list" class="content_list">
+                    <li id="report1" class="sent_for_analysis pending">
+                        <h3>Deepika <span class="report_type">child</span></h3>
+                        <p class="report_status">Sent for analysis</p>
+                        <p class="meta_created" title="Created by you at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <div class="report_links"><a href="#" class="icon download prints_file" title="Download Deepika's fingerprints">fingerprints file name link</a>
+                        <a href="cs-report-report_cancelled.html" class="button cancel_button icon disable" title="Cancel report"></a></div>
+                    </li>
+                    <li id="report2" class="analysing pending">
+                        <h3>Deepika <span class="report_type">child</span></h3>
+                        <p class="report_status">Analysing</p>
+                        <p class="meta_created" title="Created by you at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_analysed" title="Akhtar Ahsan is analysing"><span class="report_analyst">Akhtar Ahsan</span></p>
+                        <div class="report_links"><a href="#" class="icon download prints_file" title="Download Deepika's fingerprints">fingerprints file name link</a></div>
+                    </li>
+                    <li id="report3" class="analysed pending">
+                        <h3>Deepika <span class="report_type">child</span></h3>
+                        <p class="report_status">Analysed</p>
+                        <p class="meta_created" title="Created by you at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_analysed" title="Analysed by Akhtar Ahsan at 17:30, Sunday, 24th March, 2013"><span class="report_analyst">Akhtar Ahsan</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="report_remarks"><em>Remarks:</em> Some remarks here some remarks here some remarks here</p>
+                        <div class="report_links"><a href="#" class="icon download prints_file" title="Download Deepika's fingerprints">fingerprints file name link</a>
+                        <a href="#" class="icon download report_file" title="Download Analysis report">report file name link</a></div>
+                    </li>
+                    <li id="report4" class="completed complete">
+                        <h3>Deepika <span class="report_type">child</span></h3>
+                        <p class="report_status">Completed</p>
+                        <p class="meta_created" title="Created by you at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_analysed" title="Analysed by Akhtar Ahsan at 17:30, Sunday, 24th March, 2013"><span class="report_analyst">Akhtar Ahsan</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="report_remarks"><em>Remarks:</em> Some remarks here some remarks here some remarks here</p>
+                        <div class="report_links"><a href="#" class="icon download prints_file" title="Download Deepika's fingerprints">fingerprints file name link</a>
+                        <a href="#" class="icon download report_file" title="Download Analysis report">report file name link</a></div>
+                    </li>
+                    <li id="report5" class="cancelled">
+                        <h3>Deepika <span class="report_type">child</span></h3>
+                        <p class="report_status">Cancelled by analyst</p>
+                        <p class="meta_created" title="Created by you at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_cancelled" title="Cancelled by Akhtar Ahsan at 17:30, Sunday, 24th March, 2013"><span class="cancelled_by">Akhtar Ahsan</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="report_remarks"><em>Reason:</em> Here comes the cancellation reason</p>
+                    </li>
+                    <li id="report6" class="cancelled">
+                        <h3>Deepika <span class="report_type">child</span></h3>
+                        <p class="report_status">Cancelled by you</p>
+                        <p class="meta_created" title="Created by you at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_cancelled"><time datetime="2013-03-24" pubdate title="17:30, Sunday, 24th March, 2013">24th March, 2013</time></p>
+                    </li>
+                </ul><!-- END OF UL #REPORT_LIST -->
+            </section><!-- END OF SECTION #REPORT -->
+        </section><!-- END OF SECTION #CONTENT -->
+    
+    
+        <footer id="main_footer">
+        	<div id="footer_container">
+                <section id="contact_info">
+                    <h5>Famous Fingers</h5>
+                    <ul>
+                        <li>4th floor, SCO 371-373 Sector 34 A</li>
+                        <li>Chandigarh - 160034</li>
+                        <li><a class="email icon" href="mailto:contact@famousfingers.net">contact@famousfingers.net</a></li>
+                        <li><a class="phone icon" href="tel:+919815099959">+91 98150 99959</a></li>
+                        <li>Phone: 0172-5049751/52/53</li>
+                    </ul>
+                </section>
+                
+                <nav id="footer_nav">
+                    <h5>Some useful links</h5>
+                    <ul>
+                        <li><a href="#">Download client software</a></li>
+                        <li><a href="cs-payment_methods.html">Payment methods</a></li>
+                        <li><a href="cs-get_started.html">Get started</a></li>
+                    </ul>
+                </nav>
+                
+                <small id="copyright">Consultant Comunication Application. <span class="dont_break">&copy; 2013 <em>FamousFingers</em>.</span></small>
+            </div>
+        </footer>
+    </div><!-- END OF DIV #RIGHT_DIV -->
+
+
+
+    <div id="left_div">
+        <div id="logo_container">
+            <a href="cs-home.html"><h1 id="logo" class="hide_text">Famous Fingers</h1></a>
+        </div>
+        
+        <aside id="content_sidebar">
+            <section id="refine_report" class="refine">
+                <h2 class="search icon">Refine reports</h2>
+                <form id="report_form" action="cs-report.html" method="get" name="report_form">
+                    <div>
+                        <h3>Report status</h3>
+                        <ul class="refine_list">
+                            <li><label><input type="checkbox" name="status" value="">Sent for analysis</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Analysing</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Analysed</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Completed</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Cancelled by you</label></li>
+                            <li><label><input type="checkbox" name="status" value="">Cancelled by analyst</label></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Report type</h3>
+                        <ul class="refine_list">
+                            <li><label><input type="checkbox" name="type" value="">Child</label></li>
+                            <li><label><input type="checkbox" name="type" value="">Adult</label></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Date created</h3>
+                        <label for="created_start_date">From</label>
+                        <input id="created_start_date" type="date" value="" name="created_start_date">
+
+                        <label for="created_end_date">To</label>
+                        <input id="created_end_date" type="date" value="" name="created_end_date">
+                    </div>
+
+                    <input id="report_submit" type="submit" value="Show reports" name="report_submit">
+                </form><!-- END OF FORM #REPORT_FORM-->
+            </section><!-- END OF SECTION #REFINE_REPORT -->
+        </aside><!-- END OF ASIDE #CONTENT_SIDEBAR -->
+    </div><!-- END OF DIV #LEFT_DIV -->
+</div><!-- END OF DIV #WRAPPER -->
+
+
+<script src="js/CCA_FF.js"></script>
+
+</body>
+</html>

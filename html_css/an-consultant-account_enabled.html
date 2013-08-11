@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Consultant | Famous Fingers</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="right_div">
+    	<header id="main_header">
+            <section id="user">
+                <h2 id="user_name" class="user_name icon">Akhtar Ahsan</h2>
+                <ul id="user_links">
+                    <li><a href="an-profile.html">Profile</a></li>
+                    <li><a href="login-logged_out.html">Logout</a></li>
+                </ul>
+            </section>
+            <nav id="main_nav" class="second_style">
+                <ul>
+                    <li><a href="an-home.html">Home</a></li>
+                    <li><a href="an-report.html">Report</a></li>
+                    <li><a href="an-consultant.html" class="active">Consultant</a></li>
+                    <li><a href="an-pins.html">PINs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="content">
+        	<div class="msg_block"><p class="status_msg">Account of Rahulina (XXX012345) is <em>enabled.</em></p></div>
+
+            <section id="consultant">
+                <header>
+                    <h2 class="network icon">Consultants <span class="subhead">1928 consultants in 5 locations</span></h2>
+                    <form id="cs_refine_form" class="header_refine_form" action="an-consultant.html" method="get" name="cs_refine_form">
+                        <label for="status">Status:</label>
+                        <select id="status" name="status">
+                            <option value="all">All</option>
+                            <option value="unregistered">Unregistered</option>
+                            <option value="incomplete">Incomplete</option>
+                            <option value="complete">Complete</option>
+                            <option value="disabled">Disabled</option>
+                        </select>
+                        
+                        <label for="sort_by">Sort by:</label>
+                        <select id="sort_by" name="sort_by">
+                            <option value="name">Name</option>
+                            <option value="date">Date added</option>
+                            <option value="location">Location</option>
+                            <option value="pins">PINs left</option>
+                        </select>
+                        
+                        <select id="order" name="order">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                        
+                        <label for="name">Name:</label>
+                        <input type="search" id="name" name="name">
+                        
+                        <input id="cs_refine_submit" type="submit" value="Go &rarr;" name="cs_refine_submit">
+                    </form>
+                </header>
+    
+                <ul id="cs_list" class="content_list">
+                    <li id="cs1" class="unregistered">
+                        <h3 class="normal_cs icon" title="Under Banglore franchise">Rahulina Singhania <a href="an-consultant-edit_location.html" class="icon location" title="Change location"></a><span class="cs_id">XXX0123456</span><span class="cs_status">Unregistered</span></h3>
+                        <p class="cs_date_registered" title="Added by Akhtar Ahsan at 17:30, Sunday, 24th March, 2013"><span class="added_by">Akhtar Ahsan</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a>
+                        <a href="an-consultant-account_disabled.html" class="button cancel_button icon disable" title="Disable account"></a>
+                        <a class="make_franchise icon button" href="an-consultant-franchise_set.html" title="Make Banglore franchise"></a>
+                        <a class="make_independent icon button" href="an-consultant-independent_set.html" title="Make independent (Under no franchise)"></a></div>
+                    </li>
+                    <li id="cs2" class="incomplete">
+                    	<form class="assign_pins_form header_inline_form" action="an-consultant-pins_assigned.html" name="assign_pins_form_2" method="post">
+                        	<input type="hidden" name="cs_id" value="XXX0123456">
+                            Request pending for 100 PINs. <a href="an-consultant-pins_assigned.html">Assign 100 PINs</a> or Assign <input class="pin_count" type="number" required value="100" name="pin_count"> PINs
+                            <input id="assign_pins_submit" type="submit" value="Assign" name="assign_pins_submit">
+                        </form>
+                        <h3 class="normal_cs icon" title="Under Banglore franchise">Rahulina Singhania <a href="an-consultant-edit_location.html" class="icon location" title="Change location"></a><span class="cs_id">XXX0123456</span><span class="cs_status">Incomplete profile</span></h3>
+                        <p class="cs_date_registered" title="Added by Akhtar Ahsan at 17:30, Sunday, 24th March, 2013"><span class="added_by">Akhtar Ahsan</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a>
+                        <a href="an-consultant-account_disabled.html" class="button cancel_button icon disable" title="Disable account"></a>
+                        <a class="make_franchise icon button" href="an-consultant-franchise_set.html" title="Make Banglore franchise"></a>
+                        <a class="make_independent icon button" href="an-consultant-independent_set.html" title="Make independent (Under no franchise)"></a></div>
+                        <p class="current_status"><span class="icon pin">100 PINs left</span><span class="icon report">10000 reports completed</span><span class="icon pending_report">10 pending reports</span></p>
+                    </li>
+                    <li id="cs3" class="complete">
+                    	<form class="assign_pins_form header_inline_form" action="an-consultant-pins_assigned.html" name="assign_pins_form_3" method="post">
+                        	<input type="hidden" name="cs_id" value="XXX0123456">
+                            Assign <input class="pin_count" type="number" required value="50" name="pin_count"> PINs
+                            <input id="assign_pins_submit" type="submit" value="Assign" name="assign_pins_submit">
+                        </form>
+                        <h3 class="franchise icon" title="Banglore franchise">Rahulina Singhania <a href="an-consultant-edit_location.html" class="icon location" title="Change location"></a><span class="cs_id">XXX0123456</span><span class="cs_status">Complete profile</span></h3>
+                        <p class="cs_date_registered" title="Added by Sofilina Roy (XXX10234) at 17:30, Sunday, 24th March, 2013"><span class="added_by">Sofilina Roy (XXX10234)</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="cs_address">#1234, ABC street, Banglore - 112233</p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a><a href="tel:919876543210" class="icon phone">91 98765 43210</a>
+                        <a href="an-consultant-account_disabled.html" class="button cancel_button icon disable" title="Disable account"></a>
+                        <a class="remove_franchise icon button cancel_button" href="an-consultant-franchise_removed.html" title="Remove Banglore franchise"></a></div>
+                        <p class="current_status"><span class="icon pin">100 PINs left</span><span class="icon report">10000 reports completed</span><span class="icon pending_report">10 pending reports</span></p>
+                    </li>
+
+                    <h4>Banglore location</h4>
+                    <li id="cs4" class="complete">
+                    	<form class="assign_pins_form header_inline_form" action="an-consultant-pins_assigned.html" name="assign_pins_form_3" method="post">
+                        	<input type="hidden" name="cs_id" value="XXX0123456">
+                            Assign <input class="pin_count" type="number" required value="50" name="pin_count"> PINs
+                            <input id="assign_pins_submit" type="submit" value="Assign" name="assign_pins_submit">
+                        </form>
+                        <h3 class="independent_cs icon" title="Independent consultant. Under no franchise.">Rahulina Singhania <a href="an-consultant-edit_location.html" class="icon location" title="Change location"></a><span class="cs_id">XXX0123456</span><span class="cs_status">Complete profile</span></h3>
+                        <p class="cs_date_registered" title="Added by Sofilina Roy (XXX10234) at 17:30, Sunday, 24th March, 2013"><span class="added_by">Sofilina Roy (XXX10234)</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="cs_address">#1234, ABC street, Banglore - 112233</p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a><a href="tel:919876543210" class="icon phone">91 98765 43210</a>
+                        <a href="an-consultant-account_disabled.html" class="button cancel_button icon disable" title="Disable account"></a>
+                        <a class="assign_franchise icon button cancel_button" href="an-consultant-franchise_assigned.html" title="Assign to Banglore franchise"></a>
+                        <a class="make_franchise icon button" href="an-consultant-franchise_set.html" title="Make Banglore franchise"></a></div>
+                        <p class="current_status"><span class="icon pin">100 PINs left</span><span class="icon report">10000 reports completed</span><span class="icon pending_report">10 pending reports</span></p>
+                    </li>
+                    <li id="cs5" class="disabled">
+                        <h3 class="independent_cs icon" title="Independent consultant. Under no franchise.">Rahulina Singhania <a href="an-consultant-edit_location.html" class="icon location" title="Change location"></a><span class="cs_id">XXX0123456</span><span class="cs_status">Disabled</span></h3>
+                        <p class="cs_date_registered" title="Added by Akhtar Ahsan at 17:30, Sunday, 24th March, 2013"><span class="added_by">Akhtar Ahsan</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="cs_address">#1234, ABC street, Banglore - 112233</p>
+                        <div class="cs_links"><a href="mailto:email@gmail.com" class="icon email">email@gmail.com</a><a href="tel:919876543210" class="icon phone">91 98765 43210</a>
+                        <a href="an-consultant-account_enabled.html" class="button icon enable" title="">Enable account</a></div>
+                        <p class="current_status"><span class="icon pin">100 PINs left</span><span class="icon report">10000 reports completed</span><span class="icon pending_report">10 pending reports</span></p>
+                    </li>
+                </ul><!-- END OF UL #CS_LIST -->
+                
+               	<ul class="page_links">
+                	<li><a href="" class="button normal_button">&laquo; Previous page</a></li>
+                	<li><a href="" class="button normal_button">Next page &raquo;</a></li>
+                	<li class="page_no">Page 1 of 45</li>
+                </ul>
+            </section><!-- END OF SECTION #CONSULTANT -->
+        </section><!-- END OF SECTION #CONTENT -->
+    
+    
+        <footer id="main_footer">
+        	<div id="footer_container">
+                <p><em>2057</em> consultants registered.</p>
+                <p><em>12034</em> fingerprints analysed.</p>
+                
+                <small id="copyright">Consultant Comunication Application. <span class="dont_break">&copy; 2013 <em>FamousFingers</em>.</span></small>
+            </div>
+        </footer>
+    </div><!-- END OF DIV #RIGHT_DIV -->
+
+
+
+    <div id="left_div">
+        <div id="logo_container">
+            <a href="an-home.html"><h1 id="logo" class="hide_text">Famous Fingers</h1></a>
+        </div>
+        
+        <aside id="content_sidebar">
+            <section id="refine_report" class="refine">
+                <h2 class="add icon">Add consultant</h2>
+                <form id="add_cs_form" action="an-consultant-cs_added.html" method="post" name="add_cs_form">
+                    <label for="cs_first_name" class="required">First name</label>
+                    <input id="cs_first_name" type="text" required name="cs_first_name">
+                    
+                    <label for="cs_last_name" class="required">Last name</label>
+                    <input id="cs_last_name" type="text" required name="cs_last_name">
+                    
+                    <label for="cs_email" class="required">Email</label>
+                    <input id="cs_email" type="email" required name="cs_email">
+                    
+                    <label for="cs_loc" class="required">Location</label>
+                    <select id="cs_loc" name="cs_loc">
+                        <option value="">Banglore</option>
+                        <option value="">Chandigarh</option>
+                        <option value="">New Delhi</option>
+                        <option id="new" value="">(New location)</option>
+                    </select>
+                    
+                    <label for="new_loc" class="required">Enter new location</label>
+                    <input id="new_loc" type="text" required name="new_loc">
+                    
+                    <label for="new_loc_code" class="required">New location code</label>
+                    <input id="new_loc_code" type="text" required name="new_loc_code">
+                    
+                    <label for="cs_role" class="required">Role</label>
+                    <select id="cs_role" name="cs_role">
+                        <option value="">Circle franchise</option>
+                        <option value="">Independent (Reports directly to FF)</option>
+                        <option value="">Normal (Reports to circle franchise)</option>
+                    </select>
+
+                    <input type="submit" value="Generate ID" name="generate">
+                </form>
+            </section><!-- END OF SECTION #REFINE_REPORT -->
+        </aside><!-- END OF ASIDE #CONTENT_SIDEBAR -->
+    </div><!-- END OF DIV #LEFT_DIV -->
+</div><!-- END OF DIV #WRAPPER -->
+
+
+<script src="js/CCA_FF.js"></script>
+
+</body>
+</html>

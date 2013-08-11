@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+
+<title>PINs | Famous Fingers</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="right_div">
+    	<header id="main_header">
+            <section id="user">
+                <h2 id="user_name" class="user_name icon">Akhtar Ahsan</h2>
+                <ul id="user_links">
+                    <li><a href="an-profile.html">Profile</a></li>
+                    <li><a href="login-logged_out.html">Logout</a></li>
+                </ul>
+            </section>
+            <nav id="main_nav" class="second_style">
+                <ul>
+                    <li><a href="an-home.html">Home</a></li>
+                    <li><a href="an-report.html">Report</a></li>
+                    <li><a href="an-consultant.html">Consultant</a></li>
+                    <li><a href="an-pins.html" class="active">PINs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="content">
+            <section id="pins">
+                <header>
+                    <h2 class="pin icon">PIN requests / assigned <span class="subhead">11 records</h2>
+                    <form id="pins_refine_form" class="header_refine_form" action="an-pins.html" method="get" name="pins_refine_form">
+                        <label for="sort_by">Sort by:</label>
+                        <select id="sort_by" name="sort_by">
+                            <option value="date">Date</option>
+                            <option value="name">Name</option>
+                            <option value="location">Location</option>
+                            <option value="pin_count">PIN count</option>
+                        </select>
+                        
+                        <select id="order" name="order">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                        
+                        <input id="pins_refine_submit" type="submit" value="Go &rarr;" name="pins_refine_submit">
+                    </form>
+                </header>
+    
+                <ul id="pins_list" class="content_list">
+                    <li id="pins1" class="assigned">
+                        <h3 title="Requested 25 PINs. Assigned 20 PINs">20 PINs <span class="requested_pins">25 PINs</span></h3>
+                        <p class="pins_status">Assigned</p>
+                        <p class="meta_requested" title="Requested by Rahulina (XXX01234) at 17:30, Sunday, 24th March, 2013"><span class="requested_by">Rahulina (XXX01234)</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_assigned"><time datetime="2013-03-24" pubdate title="17:30, Sunday, 24th March, 2013">24th March, 2013</time></p>
+                        <p class="pins_payment"><em>Payment:</em> Rs 24000 by cheque on 24th March, 2013</p>
+                    </li>
+                    <li id="pins2" class="pending">
+                        <h3>23 PINs</h3>
+                        <p class="pins_status">Pending</p>
+                        <p class="meta_requested" title="Requested by Rahulina (XXX01234) at 17:30, Sunday, 24th March, 2013"><span class="requested_by">Rahulina (XXX01234)</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <div class="pins_links"><a href="an-pins-cancellation_reason.html" class="button cancel_button disable icon" title="Cancel request"></a>
+                        <a class="assign_pins_button button pin icon" href="an-pins-pins_assigned.html">Assign 23 PINs</a></div>
+                        <p class="pins_payment"><em>Payment:</em> Rs 24000 by cheque on 24th March, 2013</p>
+                    </li>
+                    <li id="pins3" class="cancelled">
+                        <h3>23 PINs</h3>
+                        <p class="pins_status">Cancelled</p>
+                        <p class="meta_requested" title="Requested by Rahulina (XXX01234) at 17:30, Sunday, 24th March, 2013"><span class="requested_by">Rahulina (XXX01234)</span> on <time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_cancelled"><time datetime="2013-03-24" pubdate title="17:30, Sunday, 24th March, 2013">24th March, 2013</time></p>
+                        <p class="pins_payment"><em>Payment:</em> Rs 24000 by cheque on 24th March, 2013</p>
+                        <p class="pins_remarks"><em>Cancellation reason:</em> Here comes the reason for cancellation</p>
+                    </li>
+                    <li id="pins4" class="other_assigned">
+                        <h3>23 PINs</h3>
+                        <p class="pins_status">Assigned without request</p>
+                        <p class="meta_requested" title="Assigned to Rahulina (XXX01234)"><span class="requested_by">Rahulina (XXX01234)</span></p>
+                        <p class="meta_assigned"><time datetime="2013-03-24" pubdate title="17:30, Sunday, 24th March, 2013">24th March, 2013</time></p>
+                    </li>
+                </ul><!-- END OF UL #PINS_LIST -->
+                
+               	<ul class="page_links">
+                	<li><a href="" class="button normal_button">&laquo; Previous page</a></li>
+                	<li><a href="" class="button normal_button">Next page &raquo;</a></li>
+                	<li class="page_no">Page 1 of 45</li>
+                </ul>
+            </section><!-- END OF SECTION #PINS -->
+        </section><!-- END OF SECTION #CONTENT -->
+    
+    
+        <footer id="main_footer">
+        	<div id="footer_container">
+                <p><em>2057</em> consultants registered.</p>
+                <p><em>12034</em> fingerprints analysed.</p>
+                
+                <small id="copyright">Consultant Comunication Application. <span class="dont_break">&copy; 2013 <em>FamousFingers</em>.</span></small>
+            </div>
+        </footer>
+    </div><!-- END OF DIV #RIGHT_DIV -->
+
+
+    <div id="left_div">
+        <div id="logo_container">
+            <a href="an-home.html"><h1 id="logo" class="hide_text">Famous Fingers</h1></a>
+        </div>
+        
+        <aside id="content_sidebar">
+            <section id="refine_pins" class="refine">
+                <h2 class="search icon">Refine results</h2>
+                <form id="pins_form" action="an-pins.html" method="get" name="pins_form">
+                    <div>
+                        <h3>Consultant</h3>
+                        <ul class="refine_list">
+                            <li><label title="Rahulina (XXX012345)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX01235)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX01245)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX01345)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX02345)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX12345)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX012345)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX02345)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX01345)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX01245)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX0125)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                            <li><label title="Rahulina (XXX01345)"><input type="checkbox" name="cs" value="">Rahulina</label></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Location</h3>
+                        <ul class="refine_list">
+                            <li><label><input type="checkbox" name="location" value="">Banglore (XXX)</label></li>
+                            <li><label><input type="checkbox" name="location" value="">Banglore (XXX)</label></li>
+                            <li><label><input type="checkbox" name="location" value="">Banglore (XXX)</label></li>
+                            <li><label><input type="checkbox" name="location" value="">Banglore (XXX)</label></li>
+                            <li><label><input type="checkbox" name="location" value="">Banglore (XXX)</label></li>
+                            <li><label><input type="checkbox" name="location" value="">Banglore (XXX)</label></li>
+                            <li><label><input type="checkbox" name="location" value="">Banglore (XXX)</label></li>
+                            <li><label><input type="checkbox" name="location" value="">Banglore (XXX)</label></li>
+                            <li><label><input type="checkbox" name="location" value="">Banglore (XXX)</label></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Type</h3>
+                        <ul class="refine_list">
+                            <li><label><input type="checkbox" name="type" value="">Pending requests</label></li>
+                            <li><label><input type="checkbox" name="type" value="">Completed requests</label></li>
+                            <li><label><input type="checkbox" name="type" value="">Cancelled requests</label></li>
+                            <li><label><input type="checkbox" name="type" value="">Assigned without request</label></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Date</h3>
+                        <label for="start_date">From</label>
+                        <input id="start_date" type="date" value="" name="start_date">
+
+                        <label for="end_date">To</label>
+                        <input id="end_date" type="date" value="" name="end_date">
+                    </div>
+
+                    <input id="pins_submit" type="submit" value="Show PINs" name="pins_submit">
+                </form><!-- END OF FORM #PINS_FORM-->
+            </section><!-- END OF SECTION #REFINE_PINS -->
+        </aside><!-- END OF ASIDE #CONTENT_SIDEBAR -->
+    </div><!-- END OF DIV #LEFT_DIV -->
+</div><!-- END OF DIV #WRAPPER -->
+
+
+<script src="js/CCA_FF.js"></script>
+
+</body>
+</html>

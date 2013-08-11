@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Home | Famous Fingers</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="right_div">
+    	<header id="main_header">
+            <section id="user">
+                <h2 id="user_name" class="user_name icon normal_cs" title="Under Banglore franchise">Rahulina Singhania</h2>
+                <ul id="user_links">
+                    <li><a href="cs-profile.html">Profile</a></li>
+                    <li><a href="login-logged_out.html">Logout</a></li>
+                </ul>
+            </section>
+            <nav id="main_nav" class="second_style">
+                <ul>
+                    <li><a href="cs-home-welcome.html" class="active">Home</a></li>
+                    <li><a href="cs-report-welcome.html">Report</a></li>
+                    <li><a href="cs-pins-welcome.html">PINs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="content">
+        	<div class="msg_block"><p class="status_msg"><em>Welcome</em> to Consultant Comunication Application, FamousFingers. You can <a href="cs-get_started.html">learn about our process</a> or <br><a href="">download our client software</a> straight away & <a href="#create_report">create your first report.</a></p></div>
+            
+            <section id="create_report">
+                <h2 class="send icon">Create new report</h2>
+                <p class="intro_para">Please attach a single zip or rar file with the report.</p>
+                <form id="create_report_form" action="cs-home-report_sent.html" method="post" name="create_report_form">
+                    <div><label for="report_of" class="required">Report of</label>
+                    <input id="report_of" type="text" required name="report_of"></div>
+                    
+                    <div><label for="type" class="required">Type</label>
+                    <select id="type" required name="type">
+                        <option value="child">Child report</option>
+                        <option value="adult">Adult report</option>
+                    </select></div>
+                    
+                    <div class="file"><label for="prints" class="required">Attach fingerprints file</label>
+                    <input id="prints" type="file" required name="prints"></div>
+                    
+                    <div><label>&nbsp;</label>
+                    <input id="create_report_submit" type="submit" value="Send prints" name="create_report_submit"></div>
+                </form>
+            </section>
+
+            <section id="report">
+                <header>
+                    <h2 class="report icon">Reports <span class="subhead">0 reports</span></h2>
+                    <form id="report_list_refine_form" class="header_refine_form" action="cs-home.html" method="get" name="report_list_refine_form">
+                        <label for="status">Reports:</label>
+                        <select id="status" name="status">
+                            <option value="all">All</option>
+                            <option value="pending">Pending</option>
+                            <option value="completed">Completed</option>
+                            <option value="cancelled">Cancelled</option>
+                        </select>
+                        
+                        <label for="sort_by">Sort by:</label>
+                        <select id="sort_by" name="sort_by">
+                            <option value="date">Date</option>
+                            <option value="name">Name</option>
+                        </select>
+                        
+                        <select id="order" name="order">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                        
+                        <label for="name">Report of:</label>
+                        <input type="search" id="name" name="name">
+                        
+                        <input id="report_list_refine_submit" type="submit" value="Go &rarr;" name="report_list_refine_submit">
+                    </form>
+                </header>
+    
+                <p class="no_record">No reports to display</p>
+            </section><!-- END OF SECTION #REPORT -->
+        </section><!-- END OF SECTION #CONTENT -->
+    
+    
+        <footer id="main_footer">
+        	<div id="footer_container">
+                <section id="contact_info">
+                    <h5>Famous Fingers</h5>
+                    <ul>
+                        <li>4th floor, SCO 371-373 Sector 34 A</li>
+                        <li>Chandigarh - 160034</li>
+                        <li><a class="email icon" href="mailto:contact@famousfingers.net">contact@famousfingers.net</a></li>
+                        <li><a class="phone icon" href="tel:+919815099959">+91 98150 99959</a></li>
+                        <li>Phone: 0172-5049751/52/53</li>
+                    </ul>
+                </section>
+                
+                <nav id="footer_nav">
+                    <h5>Some useful links</h5>
+                    <ul>
+                        <li><a href="#">Download client software</a></li>
+                        <li><a href="cs-payment_methods.html">Payment methods</a></li>
+                        <li><a href="cs-get_started.html">Get started</a></li>
+                    </ul>
+                </nav>
+                
+                <small id="copyright">Consultant Comunication Application. <span class="dont_break">&copy; 2013 <em>FamousFingers</em>.</span></small>
+            </div>
+        </footer>
+    </div><!-- END OF DIV #RIGHT_DIV -->
+
+
+    <div id="left_div">
+        <div id="logo_container">
+            <a href="cs-home-welcome.html"><h1 id="logo" class="hide_text">Famous Fingers</h1></a>
+        </div>
+        
+        <aside id="content_sidebar">
+            <section id="notification">
+                <h2 class="info icon">Notifications</h2>
+                <p class="no_record">No notifications yet</p>
+            </section><!-- END OF SECTION #NOTIFICATION -->
+
+            <section id="whiteboard">
+                <h2 class="whiteboard icon">Whiteboard</h2>
+                <p class="no_record">No messages posted</p>
+            </section><!-- END OF SECTION #WHITEBOARD-->
+        </aside><!-- END OF ASIDE #CONTENT_SIDEBAR -->
+    </div><!-- END OF DIV #LEFT_DIV -->
+</div><!-- END OF DIV #WRAPPER -->
+
+
+<script src="js/CCA_FF.js"></script>
+
+</body>
+</html>

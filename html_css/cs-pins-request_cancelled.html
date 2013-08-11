@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+
+<title>PINs | Famous Fingers</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="right_div">
+    	<header id="main_header">
+            <section id="user">
+                <h2 id="user_name" class="user_name icon independent_cs" title="Independent consultant. Under no franchise.">Rahulina Singhania</h2>
+                <ul id="user_links">
+                    <li><a href="cs-profile.html">Profile</a></li>
+                    <li><a href="login-logged_out.html">Logout</a></li>
+                </ul>
+            </section>
+            <nav id="main_nav" class="second_style">
+                <ul>
+                    <li><a href="cs-home.html">Home</a></li>
+                    <li><a href="cs-report.html">Report</a></li>
+                    <li><a href="cs-pins.html" class="active">PINs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="content">
+        	<div class="msg_block"><p class="status_msg">Request of 25 Pins <em>cancelled.</em></p></div>
+
+            <section id="pins">
+                <header>
+                    <h2 class="pin icon">PIN requests / assigned <span class="subhead">11 records</h2>
+                    <form id="pins_refine_form" class="header_refine_form" action="cs-pins.html" method="get" name="pins_refine_form">
+                        <label for="type">Type:</label>
+                        <select id="type" name="type">
+                            <option value="">Pending requests</option>
+                            <option value="">Completed requests</option>
+                            <option value="">Cancelled requests</option>
+                            <option value="">Assigned without request</option>
+                        </select>
+                        
+                        <label for="sort_by">Sort by:</label>
+                        <select id="sort_by" name="sort_by">
+                            <option value="date">Date</option>
+                        </select>
+                        
+                        <select id="order" name="order">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                        
+                        <input id="pins_refine_submit" type="submit" value="Go &rarr;" name="pins_refine_submit">
+                    </form>
+                </header>
+    
+                <ul id="pins_list" class="content_list">
+                    <li id="pins1" class="assigned">
+                        <h3>23 PINs</h3>
+                        <p class="pins_status">Assigned</p>
+                        <p class="meta_requested" title="Requested at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_assigned" title="Assigned at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="pins_payment"><em>Payment:</em> Rs 24000 by cheque on 24th March, 2013</p>
+                    </li>
+                    <li id="pins2" class="pending">
+                        <h3>23 PINs</h3>
+                        <p class="pins_status">Pending</p>
+                        <p class="meta_requested" title="Requested at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <div class="pins_links"><a href="cs-pins-request_cancelled.html" class="button cancel_button disable icon" title="Cancel request"></a></div>
+                        <p class="pins_payment"><em>Payment:</em> Rs 24000 by cheque on 24th March, 2013</p>
+                    </li>
+                    <li id="pins3" class="cancelled">
+                        <h3>23 PINs</h3>
+                        <p class="pins_status">Cancelled by FF</p>
+                        <p class="meta_requested" title="Requested at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_cancelled" title="Cancelled by FamousFingers at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="pins_payment"><em>Payment:</em> Rs 24000 by cheque on 24th March, 2013</p>
+                        <p class="pins_remarks"><em>Cancellation reason:</em> Here comes the reason for cancellation</p>
+                    </li>
+                    <li id="pins4" class="cancelled">
+                        <h3>23 PINs</h3>
+                        <p class="pins_status">Cancelled by you</p>
+                        <p class="meta_requested" title="Requested at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="meta_cancelled" title="Cancelled by you at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                        <p class="pins_payment"><em>Payment:</em> Rs 24000 by cheque on 24th March, 2013</p>
+                    </li>
+                    <li id="pins5" class="other_assigned">
+                        <h3>23 PINs</h3>
+                        <p class="pins_status">Assigned without request</p>
+                        <p class="meta_assigned" title="Assigned at 17:30, Sunday, 24th March, 2013"><time datetime="2013-03-24" pubdate>24th March, 2013</time></p>
+                    </li>
+                </ul><!-- END OF UL #PINS_LIST -->
+            </section><!-- END OF SECTION #PINS -->
+        </section><!-- END OF SECTION #CONTENT -->
+    
+    
+        <footer id="main_footer">
+        	<div id="footer_container">
+                <section id="contact_info">
+                    <h5>Famous Fingers</h5>
+                    <ul>
+                        <li>4th floor, SCO 371-373 Sector 34 A</li>
+                        <li>Chandigarh - 160034</li>
+                        <li><a class="email icon" href="mailto:contact@famousfingers.net">contact@famousfingers.net</a></li>
+                        <li><a class="phone icon" href="tel:+919815099959">+91 98150 99959</a></li>
+                        <li>Phone: 0172-5049751/52/53</li>
+                    </ul>
+                </section>
+                
+                <nav id="footer_nav">
+                    <h5>Some useful links</h5>
+                    <ul>
+                        <li><a href="#">Download client software</a></li>
+                        <li><a href="cs-payment_methods.html">Payment methods</a></li>
+                        <li><a href="cs-get_started.html">Get started</a></li>
+                    </ul>
+                </nav>
+                
+                <small id="copyright">Consultant Comunication Application. <span class="dont_break">&copy; 2013 <em>FamousFingers</em>.</span></small>
+            </div>
+        </footer>
+    </div><!-- END OF DIV #RIGHT_DIV -->
+
+
+    <div id="left_div">
+        <div id="logo_container">
+            <a href="cs-home.html"><h1 id="logo" class="hide_text">Famous Fingers</h1></a>
+        </div>
+        
+        <aside id="content_sidebar">
+            <section id="request_pins">
+                <h2 class="icon pin">Request PINS</h2>
+                <form id="request_pins_form" action="cs-home-request_sent.html" method="post" name="request_pins_form">
+                    <label for="pmt" class="required">Payment (in Rs)</label>
+                    <input id="pmt" type="number" required name="pmt">
+                    
+                    <label for="pmt_mode" class="required">Payment Mode</label>
+                    <select id="pmt_mode" required name="pmt_mode">
+                        <option value="cash">Cash</option>
+                        <option value="cheque">Cheque</option>
+                        <option value="card">Credit / Debit card</option>
+                        <option value="online">Online transfer</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="pmt_date" class="required">Payement date</label>
+                    <input id="pmt_date" type="date" required name="pmt_date">
+                    
+                    <label for="no_of_pins" class="required">Number of PINs</label>
+                    <input id="no_of_pins" type="number" required name="no_of_pins">
+                    
+                    <input type="submit" id="request_pins_submit" value="Request" name="request_pins_submit">
+                </form><!-- End of form name = pmt_name -->
+            </section>
+        </aside><!-- END OF ASIDE #CONTENT_SIDEBAR -->
+    </div><!-- END OF DIV #LEFT_DIV -->
+</div><!-- END OF DIV #WRAPPER -->
+
+
+<script src="js/CCA_FF.js"></script>
+
+</body>
+</html>
