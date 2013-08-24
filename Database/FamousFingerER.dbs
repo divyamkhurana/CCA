@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="MySql" id="Project9399910" database="MySql" >
+	<schema name="famousfinger" catalogname="famousfinger" defo="y" >
+		<table name="analyst" >
+			<column name="analyst_id" type="INT" jt="4" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="first_name" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<column name="last_name" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<column name="email" type="VARCHAR" length="254" jt="12" mandatory="y" />
+			<column name="mobile_no" type="VARCHAR" length="15" jt="12" />
+			<column name="phone_no" type="VARCHAR" length="20" jt="12" />
+			<column name="city" type="VARCHAR" length="64" jt="12" />
+			<column name="pincode" type="VARCHAR" length="30" jt="12" />
+			<column name="address" type="VARCHAR" length="1024" jt="12" />
+			<column name="country" type="VARCHAR" length="64" jt="12" />
+			<column name="date_added" type="TIMESTAMP" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="last_activity" type="DATETIME" jt="93" mandatory="y" />
+			<column name="password" type="VARCHAR" length="20" jt="12" />
+			<column name="role" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<index name="pk_analyst" unique="PRIMARY_KEY" >
+				<column name="analyst_id" />
+			</index>
+			<index name="idx_analyst" unique="UNIQUE" >
+				<column name="email" />
+			</index>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="consultant" >
+			<column name="consultant_id" type="VARCHAR" length="10" jt="12" mandatory="y" />
+			<column name="key_for_id" type="INT" length="10" jt="4" mandatory="y" autoincrement="y" />
+			<column name="first_name" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<column name="last_name" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<column name="email" type="VARCHAR" length="254" jt="12" mandatory="y" />
+			<column name="mobile_no" type="VARCHAR" length="15" jt="12" />
+			<column name="phone_no" type="VARCHAR" length="20" jt="12" />
+			<column name="city" type="VARCHAR" length="64" jt="12" />
+			<column name="location" type="CHAR" length="3" jt="1" mandatory="y" />
+			<column name="pin_code" type="VARCHAR" length="30" jt="12" />
+			<column name="address" type="VARCHAR" length="1024" jt="12" />
+			<column name="country" type="VARCHAR" length="64" jt="12" />
+			<column name="date_added" type="TIMESTAMP" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="added_by" type="VARCHAR" length="64" jt="12" mandatory="y" />
+			<column name="added_by_id" type="VARCHAR" length="10" jt="12" mandatory="y" />
+			<column name="last_activity" type="DATETIME" jt="93" mandatory="y" />
+			<column name="role" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<column name="password" type="VARCHAR" length="20" jt="12" />
+			<column name="pins_left" type="INT" jt="4" unsigned="y" />
+			<column name="status" type="VARCHAR" length="20" jt="12" mandatory="y" />
+			<column name="is_disabled" type="BIT" jt="-7" />
+			<index name="pk_consultant" unique="PRIMARY_KEY" >
+				<column name="consultant_id" />
+			</index>
+			<index name="idx_consultant" unique="NORMAL" >
+				<column name="location" />
+			</index>
+			<index name="idx_consultant_0" unique="UNIQUE" >
+				<column name="email" />
+			</index>
+			<index name="key_for_id" unique="UNIQUE" >
+				<column name="key_for_id" />
+			</index>
+			<fk name="fk_consultant_location" to_schema="famousfinger" to_table="location" >
+				<fk_column name="location" pk="location_code" />
+			</fk>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="location" >
+			<column name="location_code" type="CHAR" length="3" jt="1" mandatory="y" />
+			<column name="location_name" type="VARCHAR" length="64" jt="12" mandatory="y" />
+			<index name="pk_location" unique="PRIMARY_KEY" >
+				<column name="location_code" />
+			</index>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="messages" >
+			<column name="message_id" type="INT" jt="4" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="heading" type="VARCHAR" length="256" jt="12" mandatory="y" />
+			<column name="message" type="VARCHAR" length="1024" jt="12" />
+			<column name="date_posted" type="TIMESTAMP" jt="93" mandatory="y" />
+			<column name="posted_by" type="INT" jt="4" mandatory="y" unsigned="y" />
+			<index name="pk_messages" unique="PRIMARY_KEY" >
+				<column name="message_id" />
+			</index>
+			<index name="idx_messages" unique="NORMAL" >
+				<column name="posted_by" />
+			</index>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="notification" >
+			<column name="notification_id" type="BIGINT" jt="-5" mandatory="y" unsigned="y" />
+			<column name="type_id" type="SMALLINT" jt="5" mandatory="y" unsigned="y" />
+			<column name="obj_id" type="VARCHAR" length="12" jt="12" />
+			<column name="subject_id" type="VARCHAR" length="12" jt="12" mandatory="y" />
+			<column name="for_id" type="VARCHAR" length="12" jt="12" mandatory="y" />
+			<column name="date_created" type="TIMESTAMP" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="is_seen" type="BIT" jt="-7" mandatory="y" >
+				<defo>0</defo>
+			</column>
+			<index name="pk_notification" unique="PRIMARY_KEY" >
+				<column name="notification_id" />
+			</index>
+			<index name="idx_notification" unique="NORMAL" >
+				<column name="type_id" />
+			</index>
+			<fk name="fk_notification" to_schema="famousfinger" to_table="notification_type" >
+				<fk_column name="type_id" pk="type_id" />
+			</fk>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="notification_type" >
+			<column name="type_id" type="SMALLINT" jt="5" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="type_name" type="VARCHAR" length="64" jt="12" mandatory="y" />
+			<column name="type_desc" type="VARCHAR" length="1024" jt="12" />
+			<index name="pk_notification_type" unique="PRIMARY_KEY" >
+				<column name="type_id" />
+			</index>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="pins_assigned" >
+			<column name="assign_id" type="INT" jt="4" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="assigned_to" type="VARCHAR" length="10" jt="12" mandatory="y" />
+			<column name="request_id" type="BIGINT" jt="-5" unsigned="y" />
+			<column name="pins_assigned" type="INT" jt="4" mandatory="y" unsigned="y" />
+			<column name="date_assigned" type="TIMESTAMP" length="19" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="pk_pinsassigned" unique="PRIMARY_KEY" >
+				<column name="assign_id" />
+			</index>
+			<index name="idx_pinsassigned1" unique="NORMAL" >
+				<column name="assigned_to" />
+			</index>
+			<index name="idx_pinsassigned" unique="NORMAL" >
+				<column name="request_id" />
+			</index>
+			<fk name="fk_pins_assigned_consultant" to_schema="famousfinger" to_table="consultant" >
+				<fk_column name="assigned_to" pk="consultant_id" />
+			</fk>
+			<fk name="fk_pins_assigned_pins_request" to_schema="famousfinger" to_table="pins_request" >
+				<fk_column name="request_id" pk="request_id" />
+			</fk>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="pins_request" >
+			<column name="request_id" type="BIGINT" jt="-5" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="requested_by" type="VARCHAR" length="10" jt="12" mandatory="y" />
+			<column name="no_of_pins" type="INT" jt="4" mandatory="y" unsigned="y" />
+			<column name="payment" type="FLOAT" jt="7" mandatory="y" unsigned="y" />
+			<column name="payment_mode" type="VARCHAR" length="64" jt="12" mandatory="y" />
+			<column name="date_of_payment" type="DATE" jt="91" mandatory="y" />
+			<column name="date_cancelled" type="DATETIME" jt="93" />
+			<column name="cancellation_reason" type="VARCHAR" length="1024" jt="12" />
+			<column name="date_requested" type="TIMESTAMP" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="pins_status_id" type="SMALLINT" jt="5" unsigned="y" />
+			<index name="pk_pinsrequest" unique="PRIMARY_KEY" >
+				<column name="request_id" />
+			</index>
+			<index name="idx_pinsrequest" unique="NORMAL" >
+				<column name="requested_by" />
+			</index>
+			<index name="idx_pins_request" unique="NORMAL" >
+				<column name="pins_status_id" />
+			</index>
+			<fk name="fk_pins_request_consultant" to_schema="famousfinger" to_table="consultant" >
+				<fk_column name="requested_by" pk="consultant_id" />
+			</fk>
+			<fk name="fk_pins_request" to_schema="famousfinger" to_table="pins_request_status" >
+				<fk_column name="pins_status_id" pk="pins_status_id" />
+			</fk>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="pins_request_status" >
+			<column name="pins_status_id" type="SMALLINT" jt="5" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="status_desc" type="VARCHAR" length="32" jt="12" />
+			<index name="pk_pins_request_status" unique="PRIMARY_KEY" >
+				<column name="pins_status_id" />
+			</index>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="report" >
+			<column name="report_id" type="BIGINT" jt="-5" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="created_by" type="VARCHAR" length="10" jt="12" mandatory="y" />
+			<column name="date_created" type="TIMESTAMP" jt="93" mandatory="y" />
+			<column name="report_of" type="VARCHAR" length="64" jt="12" mandatory="y" />
+			<column name="report_type" type="VARCHAR" length="64" jt="12" mandatory="y" />
+			<column name="analyst" type="INT" jt="4" unsigned="y" />
+			<column name="date_analysed" type="DATETIME" jt="93" />
+			<column name="date_cancelled" type="DATETIME" jt="93" />
+			<column name="date_completed" type="DATETIME" jt="93" />
+			<column name="special_remarks" type="VARCHAR" length="1024" jt="12" />
+			<column name="fingerprints_file_path" type="VARCHAR" length="512" jt="12" mandatory="y" />
+			<column name="analysis_report_file_path" type="VARCHAR" length="512" jt="12" />
+			<column name="cancellation_reason" type="VARCHAR" length="256" jt="12" />
+			<column name="report_status_id" type="SMALLINT" jt="5" unsigned="y" />
+			<index name="pk_report" unique="PRIMARY_KEY" >
+				<column name="report_id" />
+			</index>
+			<index name="idx_report" unique="NORMAL" >
+				<column name="created_by" />
+			</index>
+			<index name="idx_report_0" unique="NORMAL" >
+				<column name="analyst" />
+			</index>
+			<index name="idx_report_1" unique="NORMAL" >
+				<column name="report_status_id" />
+			</index>
+			<fk name="fk_report_analyst" to_schema="famousfinger" to_table="analyst" >
+				<fk_column name="analyst" pk="analyst_id" />
+			</fk>
+			<fk name="fk_report_consultant" to_schema="famousfinger" to_table="consultant" >
+				<fk_column name="created_by" pk="consultant_id" />
+			</fk>
+			<fk name="fk_report_report_status" to_schema="famousfinger" to_table="report_status" >
+				<fk_column name="report_status_id" pk="report_status_id" />
+			</fk>
+			<storage><![CDATA[engine=InnoDB]]></storage>
+		</table>
+		<table name="report_status" >
+			<column name="report_status_id" type="SMALLINT" jt="5" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="status_desc" type="VARCHAR" length="32" jt="12" />
+			<index name="pk_report_status" unique="PRIMARY_KEY" >
+				<column name="report_status_id" />
+			</index>
+		</table>
+	</schema>
+	<connector name="MySql" database="MySql" driver_class="com.mysql.jdbc.Driver" driver_jar="mysql-connector-java-5.1.23-bin.jar" host="localhost" port="3306" instance="famousfinger" user="root" schema_mapping="" />
+	<layout id="Layout9449467" name="Default" joined_routing="y" show_column_type="y" show_relation_columns="y" >
+		<entity schema="famousfinger" name="location" color="c0d4f3" x="585" y="150" />
+		<entity schema="famousfinger" name="analyst" color="c0d4f3" x="60" y="75" />
+		<entity schema="famousfinger" name="messages" color="c0d4f3" x="45" y="465" />
+		<entity schema="famousfinger" name="notification" color="c0d4f3" x="1155" y="495" />
+		<entity schema="famousfinger" name="notification_type" color="c0d4f3" x="750" y="510" />
+		<entity schema="famousfinger" name="pins_assigned" color="c0d4f3" x="960" y="330" />
+		<entity schema="famousfinger" name="consultant" color="c0d4f3" x="330" y="60" />
+		<entity schema="famousfinger" name="report_status" color="c0d4f3" x="45" y="630" />
+		<entity schema="famousfinger" name="pins_request_status" color="c0d4f3" x="705" y="255" />
+		<entity schema="famousfinger" name="pins_request" color="c0d4f3" x="915" y="60" />
+		<entity schema="famousfinger" name="report" color="c0d4f3" x="285" y="450" />
+	</layout>
+</project>
