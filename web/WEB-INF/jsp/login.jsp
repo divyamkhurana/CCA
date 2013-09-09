@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html lang="en">
 <head>
 
@@ -29,7 +31,7 @@
                 <h2 class="register icon">New consultant</h2>
                 <form id="register_form" action="authenticateUser.php" method="post" name="register_form">
                     <label for="cs_id">Your consultant ID</label>
-                    <input type="text" id="cs_id" required name="cs_id">
+                    <input type="text" id="cs_id" required name="cs_id" >
 
                     <input id="register_submit" type="submit" value="Register" name="register_submit">
                 </form>
@@ -42,15 +44,16 @@
         <section id="content">
             <section id="login">
                 <h2 class="login icon">Login</h2>
-                <form id="login_form" class="content_form" action="authenticateUser.php" method="post" name="login_form">
+                <form:form id="login_form" class="content_form" action="login.php" method="post" commandName="loginForm">
                     <label for="email">Email</label>
-                    <input type="email" id="email" required name="email">
-                    
+                    <form:input path="email" type="email"/>
+                    <form:errors path="email" cssClass="error"/>
                     <label for="pwd">Password</label>
-                    <input type="password" id="pwd" required name="password"><a id="forgot_pwd_link" href="forgot_pwd.html">Forgot password?</a>
-                    
+                    <form:input path="password"/>
+                    <form:errors path="password" cssClass="error" />
+                    <a id="forgot_pwd_link" href="forgot_pwd.html">Forgot password?</a>
                     <input id="login_submit" type="submit" value="Login" name="login_submit">
-                </form>
+                </form:form>
             </section><!-- END OF SECTION #LOGIN -->
         </section><!-- END OF SECTION #CONTENT -->
     
